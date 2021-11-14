@@ -1,16 +1,16 @@
 {
   "private": true,
-  "name": "template-for-proposals",
-  "description": "A repository template for ECMAScript proposals.",
+  "name": "proposal-enum",
+  "description": "A proposal of enum for ECMAScript.",
   "scripts": {
     "start": "npm run build-loose -- --watch",
     "build": "npm run build-loose -- --strict",
     "build-loose": "ecmarkup --verbose spec.emu index.html"
   },
-  "homepage": "https://github.com/tc39/template-for-proposals#readme",
+  "homepage": "https://github.com/Jack-Works/proposal-enum#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tc39/template-for-proposals.git"
+    "url": "git+https://github.com/Jack-Works/proposal-enum.git"
   },
   "license": "MIT",
   "devDependencies": {
