@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/base16/solarized-light.min.css"><link rel="stylesheet" href="./spec.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
 <script src="./spec.js"></script>
-<title>Proposal Title Goes Here</title><script>'use strict';
+<title>Proposal To be designed</title><script>'use strict';
 let sdoBox = {
   init() {
     this.$alternativeId = null;
@@ -1112,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let sdoMap = JSON.parse(`{}`);
-let biblio = JSON.parse(`{"refsByClause":{"sec-demo-clause":["_ref_0"]},"entries":[{"type":"clause","id":"sec-demo-clause","aoid":null,"titleHTML":"This is an emu-clause","number":"1","referencingIds":[],"key":"This is an emu-clause"},{"type":"clause","id":"sec-copyright-and-software-license","aoid":null,"titleHTML":"Copyright &amp; Software License","number":"A","referencingIds":[],"key":"Copyright & Software License"}]}`);
+let biblio = JSON.parse(`{"refsByClause":{"sec-demo-clause":["_ref_0","_ref_1"]},"entries":[{"type":"term","term":"HostIsRunning","refId":"sec-demo-clause","referencingIds":[],"key":"HostIsRunning"},{"type":"clause","id":"sec-demo-clause","aoid":null,"titleHTML":"<dfn>HostIsRunning</dfn>()","number":"1","referencingIds":[],"key":"HostIsRunning()"},{"type":"term","term":"HostOpenURL","refId":"sec-demo-clause-2","referencingIds":[],"key":"HostOpenURL"},{"type":"clause","id":"sec-demo-clause-2","aoid":null,"titleHTML":"<dfn>HostOpenURL</dfn>(<var>url</var>)","number":"2","referencingIds":["_ref_1"],"key":"HostOpenURL(url)"},{"type":"clause","id":"sec-copyright-and-software-license","aoid":null,"titleHTML":"Copyright &amp; Software License","number":"A","referencingIds":[],"key":"Copyright & Software License"}]}`);
 ;let usesMultipage = false</script><style>body {
   display: flex;
   font-size: 18px;
@@ -2290,17 +2290,25 @@ li.menu-search-result-term:before {
 .clause-attributes-tag a {
   color: #884400;
 }
-</style></head><body><div id="menu-toggle">☰</div><div id="menu-spacer"></div><div id="menu"><div id="menu-search"><input type="text" id="menu-search-box" placeholder="Search..."><div id="menu-search-results" class="inactive"></div></div><div id="menu-pins"><div class="menu-pane-header">Pins</div><ul id="menu-pins-list"></ul></div><div class="menu-pane-header">Table of Contents</div><div id="menu-toc"><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-demo-clause" title="This is an emu-clause"><span class="secnum">1</span> This is an emu-clause</a></li><li><span class="item-toggle-none"></span><a href="#sec-copyright-and-software-license" title="Copyright &amp; Software License"><span class="secnum">A</span> Copyright &amp; Software License</a></li></ol></div></div><div id="spec-container"><h1 class="version">Stage -1 Draft / November 14, 2021</h1><h1 class="title">Proposal Title Goes Here</h1>
+</style></head><body><div id="menu-toggle">☰</div><div id="menu-spacer"></div><div id="menu"><div id="menu-search"><input type="text" id="menu-search-box" placeholder="Search..."><div id="menu-search-results" class="inactive"></div></div><div id="menu-pins"><div class="menu-pane-header">Pins</div><ul id="menu-pins-list"></ul></div><div class="menu-pane-header">Table of Contents</div><div id="menu-toc"><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-demo-clause" title="HostIsRunning()"><span class="secnum">1</span> <dfn>HostIsRunning</dfn>()</a></li><li><span class="item-toggle-none"></span><a href="#sec-demo-clause-2" title="HostOpenURL(url)"><span class="secnum">2</span> <dfn>HostOpenURL</dfn>(<var>url</var>)</a></li><li><span class="item-toggle-none"></span><a href="#sec-copyright-and-software-license" title="Copyright &amp; Software License"><span class="secnum">A</span> Copyright &amp; Software License</a></li></ol></div></div><div id="spec-container"><h1 class="version">Stage -1 Draft / November 21, 2021</h1><h1 class="title">Proposal To be designed</h1>
 
+<!--
+This proposal does not decided the design constraints yet.
+Let's leave the spec empty.
+-->
 <emu-clause id="sec-demo-clause">
-  <h1><span class="secnum">1</span> This is an emu-clause</h1>
-  <p>This is an algorithm:</p>
-  <emu-alg><ol><li>Let <var>proposal</var> be <emu-val>undefined</emu-val>.</li><li>If IsAccepted(<var>proposal</var>),<ol><li>Let <var>stage</var> be <emu-val>0</emu-val>.</li></ol></li><li>Else,<ol><li>Let <var>stage</var> be <emu-val>-1</emu-val>.</li></ol></li><li>Return ?&nbsp;<emu-xref aoid="ToString" id="_ref_0"><a href="https://tc39.es/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>proposal</var>).</li></ol></emu-alg>
+  <h1><span class="secnum">1</span> <dfn>HostIsRunning</dfn>()</h1>
+  <p>The host-defined abstract operation HostIsRunning takes no argument.</p>
+  <emu-alg><ol><li>Let <var>status</var> be the result of a host-defined operation to check if the host is running.</li><li>Set <var>status</var> to !&nbsp;<emu-xref aoid="ToBoolean" id="_ref_0"><a href="https://tc39.es/ecma262/#sec-toboolean">ToBoolean</a></emu-xref>(<var>status</var>).</li><li>If <var>status</var> is <emu-val>true</emu-val>, return <emu-val>true</emu-val>.</li><li>Perform !&nbsp;<emu-xref href="#sec-demo-clause-2" id="_ref_1"><a href="#sec-demo-clause-2">HostOpenURL</a></emu-xref>(<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">"https://www.youtube.com/watch?v=dQw4w9WgXcQ"</a>).</li></ol></emu-alg>
+</emu-clause>
+<emu-clause id="sec-demo-clause-2">
+  <h1><span class="secnum">2</span> <dfn>HostOpenURL</dfn>(<var>url</var>)</h1>
+  <p>The host-defined abstract operation HostOpenURL takes 1 argument (a String). It should open the URL in a browser.</p>
 </emu-clause><emu-annex id="sec-copyright-and-software-license">
       <h1><span class="secnum">A</span> Copyright &amp; Software License</h1>
       
       <h2>Copyright Notice</h2>
-      <p>© 2021 Your Name(s) Here</p>
+      <p>© 2021 I'll fill this later</p>
 
       <h2>Software License</h2>
       <p>All Software contained in this document ("Software") is protected by copyright and is being made available under the "BSD License", included below. This Software may be subject to third party rights (rights from parties other than Ecma International), including patent rights, and no licenses under such third party rights are granted under this license even if the third party concerned is a member of Ecma International. SEE THE ECMA CODE OF CONDUCT IN PATENT MATTERS AVAILABLE AT https://ecma-international.org/memento/codeofconduct.htm FOR INFORMATION REGARDING THE LICENSING OF PATENT CLAIMS THAT ARE REQUIRED TO IMPLEMENT ECMA INTERNATIONAL STANDARDS.</p>
