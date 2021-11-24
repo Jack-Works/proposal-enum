@@ -41,6 +41,7 @@ Before the concreate design, we should decide the design constraints first.
 ### Decided not to
 
 - Allow duplicated keys
+- Hoistable declarations
 
 ### To be decided
 
