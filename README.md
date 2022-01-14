@@ -1,16 +1,24 @@
 # Enum proposal
 
-[Roadmap, design goal and relationship to the prior proposals #2](https://github.com/Jack-Works/proposal-enum/discussions/2)
+## Champion group & Authors
 
-Please go to [discussion forum](https://github.com/Jack-Works/proposal-enum/discussions) for design details!
+- [Rick Button](https://github.com/rbuckton/)
+- [Rick Waldron](https://github.com/rwaldron/)
+- [Jack Works](https://github.com/Jack-Works/)
 
 ## Motivation
 
 1. Provide enum ([Enumerated type](https://en.wikipedia.org/wiki/Enumerated_type)) in JavaScript.
+    - This pattern is widely used in JavaScript.
 
-2. Provide [Abstract Data Type](https://en.wikipedia.org/wiki/Abstract_data_type) based on enum. It is implemented in many languages in different names like "enum variants" (Rust), "Data Constructor" (Haskell) or "tagged union" (TypeScript).
+2. Provide [Abstract Data Type](https://en.wikipedia.org/wiki/Abstract_data_type) based on enum.
+    - It is implemented in many languages in different names like "enum variants" (Rust), "Data Constructor" (Haskell) or "tagged union" (TypeScript).
 
 ## Compare to the previous proposals
+
+[Roadmap, design goal and relationship to the prior proposals #2](https://github.com/Jack-Works/proposal-enum/discussions/2)
+
+Please go to [discussion forum](https://github.com/Jack-Works/proposal-enum/discussions) for design details!
 
 https://github.com/rwaldron/proposal-enum-definitions
 https://github.com/rbuckton/proposal-enum
