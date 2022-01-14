@@ -2,7 +2,7 @@
 
 ## Champion group & Authors
 
-- [Rick Button](https://github.com/rbuckton/)
+- [Ron Buckton](https://github.com/rbuckton/)
 - [Rick Waldron](https://github.com/rwaldron/)
 - [Jack Works](https://github.com/Jack-Works/)
 
