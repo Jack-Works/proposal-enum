@@ -4,26 +4,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
 <script src="./spec.js"></script>
 <pre class="metadata">
-title: Proposal To be designed
+title: Proposal Title Goes Here
 stage: -1
-contributors: I'll fill this later
+contributors: Your Name(s) Here
 </pre>
 
-<!--
-This proposal does not decided the design constraints yet.
-Let's leave the spec empty.
--->
 <emu-clause id="sec-demo-clause">
-  <h1><dfn>HostIsRunning</dfn>()</h1>
-  <p>The host-defined abstract operation HostIsRunning takes no argument.</p>
+  <h1>This is an emu-clause</h1>
+  <p>This is an algorithm:</p>
   <emu-alg>
-    1. Let _status_ be the result of a host-defined operation to check if the host is running.
-    1. Set _status_ to ! ToBoolean(_status_).
-    1. If _status_ is *true*, return *true*.
-    1. Perform ! HostOpenURL(<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">"https://www.youtube.com/watch?v=dQw4w9WgXcQ"</a>).
+    1. Let _proposal_ be *undefined*.
+    1. If IsAccepted(_proposal_), then
+      1. Let _stage_ be *0*<sub>ℤ</sub>.
+    1. Else,
+      1. Let _stage_ be *-1*<sub>ℤ</sub>.
+    1. Return ? ToString(_proposal_).
   </emu-alg>
-</emu-clause>
-<emu-clause id="sec-demo-clause-2">
-  <h1><dfn>HostOpenURL</dfn>(_url_)</h1>
-  <p>The host-defined abstract operation HostOpenURL takes 1 argument (a String). It should open the URL in a browser.</p>
 </emu-clause>
