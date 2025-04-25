@@ -1,5 +1,8 @@
 # Enum proposal
 
+> [!NOTE]  
+> See <https://github.com/tc39/proposal-enum>
+
 ## Champion group & Authors
 
 -   [Ron Buckton](https://github.com/rbuckton/)
